@@ -4,5 +4,9 @@
   "description": "className连接方法",
   "main": "index.js",
   "author": "aaaaaAndy",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaaaaAndy/jollychic"
+  }
 }
