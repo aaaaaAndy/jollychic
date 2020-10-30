@@ -3,8 +3,9 @@
 (function () {
 	'use strict';
 
+	var slice = Array.prototype.slice;
+
 	function jollychic(prefix, symbol) {
-		var slice = Array.prototype.slice;
 		symbol = symbol || '';
 
 		return function () {
