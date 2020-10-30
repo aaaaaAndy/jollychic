@@ -3,9 +3,21 @@
 (function () {
 	'use strict';
 
-	function jollychic(prefix) {
-		return function (suffix) {
-			return prefix + '' + suffix;
+	function jollychic(prefix, symbol) {
+		var slice = Array.prototype.slice;
+		symbol = symbol || '';
+
+		return function () {
+			var args = slice.call(arguments);
+			var className = prefix;
+
+			args
+			&& args.length
+			&& args.forEach(function (arg) {
+				className += symbol + arg;
+			})
+
+			return className;
 		}
 	}
 
